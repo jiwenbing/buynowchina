@@ -3,7 +3,6 @@ node_modules/
 */node_modules/
 
 # Production builds
-dist/
 build/
 
 # Environment variables
@@ -81,14 +80,12 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
 public
 
 # Vue.js build output
-dist/
 
 # Vuepress build output
 .vuepress/dist
