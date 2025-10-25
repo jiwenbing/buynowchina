@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({
         <div className="container flex-between">
           <div className={styles.logoSection}>
             <img 
-              src="/bnc-logo.png" 
+              src="https://www.xfx365.com/buynowchina/buy-logo.jpg"
               alt="BNC Logo" 
               className={styles.logo}
             />
