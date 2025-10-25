@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Buy Now China",
+    "subtitle": "Качественные китайские товары · Прямо в Россию"
+  },
+  "navigation": {
+    "home": "Главная",
+    "categories": "Категории",
+    "favorites": "Избранное",
+    "profile": "Профиль"
+  },
+  "product": {
+    "title": "Товар",
+    "price": "Цена",
+    "description": "Описание",
+    "specifications": "Характеристики",
+    "supplier": "Поставщик",
+    "contactSupplier": "Связаться с поставщиком",
+    "purchaseIntent": "Намерение покупки",
+    "tryProduct": "Попробовать товар",
+    "addToFavorites": "Добавить в избранное",
+    "share": "Поделиться товаром",
+    "minOrder": "Мин. заказ",
+    "outOfStock": "Нет в наличии",
+    "noProductsFound": "Товары не найдены",
+    "notFound": "Товар не найден"
+  },
+  "actions": {
+    "confirm": "Подтвердить",
+    "cancel": "Отмена",
+    "submit": "Отправить",
+    "back": "Назад",
+    "next": "Далее",
+    "save": "Сохранить"
+  },
+  "messages": {
+    "loading": "Загрузка...",
+    "noData": "Нет данных",
+    "error": "Произошла ошибка",
+    "success": "Операция выполнена успешно",
+    "contactSuccess": "Запрос на связь отправлен в Telegram",
+    "intentSubmitted": "Намерение покупки отправлено",
+    "linkCopied": "Ссылка скопирована в буфер обмена",
+    "minOrderError": "Минимальное количество заказа {{min}}",
+    "contactSupplier": "Связаться с поставщиком о товаре"
+  },
+  "forms": {
+    "quantity": "Количество",
+    "message": "Сообщение",
+    "contactInfo": "Контактная информация",
+    "requirements": "Требования",
+    "messagePlaceholder": "Пожалуйста, введите ваше сообщение...",
+    "requirementsPlaceholder": "Пожалуйста, подробно опишите ваши требования...",
+    "contactInfoPlaceholder": "Пожалуйста, введите вашу контактную информацию"
+  },
+  "search": {
+    "placeholder": "Поиск товаров..."
+  },
+  "categories": {
+    "all": "Все"
+  },
+  "supplier": {
+    "verified": "Проверен",
+    "rating": "Рейтинг",
+    "responseTime": "Время ответа",
+    "languages": "Языки"
+  },
+  "settings": {
+    "selectLanguage": "Выбрать язык"
+  },
+  "functions": {
+    "contactPlatform": "Связаться с платформой",
+    "merchantCooperation": "Сотрудничество с продавцами",
+    "requestSample": "Запросить образец"
+  }
+}

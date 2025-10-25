@@ -1,0 +1,246 @@
+.header {
+  background: linear-gradient(135deg, var(--tg-theme-button-color, #2481cc) 0%, #1e6bb8 100%);
+  color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 状态栏样式 */
+.statusBar {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.appInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.appName {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+}
+
+.appSubtitle {
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+}
+
+.languageBtn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 32px;
+}
+
+.languageBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.languageFlag {
+  font-size: 16px;
+}
+
+/* 功能模块区域样式 */
+.functionSection {
+  padding: 16px 0 20px 0;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.functionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.functionBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  border: none;
+  border-radius: 16px;
+  padding: 18px 12px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2c3e50;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  min-height: 85px;
+  position: relative;
+  overflow: hidden;
+}
+
+.functionBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(145deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.functionBtn:hover {
+  background: linear-gradient(145deg, #ffffff 0%, #f0f2f5 100%);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.12),
+    0 4px 8px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.functionBtn:hover::before {
+  opacity: 1;
+}
+
+.functionBtn:active {
+  transform: translateY(-1px) scale(0.98);
+  transition: all 0.1s ease;
+}
+
+.functionIcon {
+  font-size: 32px;
+  margin-bottom: 6px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+  transition: all 0.3s ease;
+}
+
+.functionBtn:hover .functionIcon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.functionText {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
+  color: #34495e;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.functionBtn:hover .functionText {
+  color: #2c3e50;
+  transform: translateY(-1px);
+}
+
+/* 联系平台按钮 - 蓝色主题 */
+.contactBtn {
+  background: linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.contactBtn:hover {
+  background: linear-gradient(145deg, #e0f2fe 0%, #bae6fd 100%);
+  border-color: rgba(14, 165, 233, 0.2);
+}
+
+.contactBtn .functionText {
+  color: #0369a1;
+}
+
+/* 商家合作按钮 - 橙色主题 */
+.cooperationBtn {
+  background: linear-gradient(145deg, #fefce8 0%, #fef3c7 100%);
+  border: 1px solid rgba(245, 158, 11, 0.1);
+}
+
+.cooperationBtn:hover {
+  background: linear-gradient(145deg, #fef3c7 0%, #fed7aa 100%);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.cooperationBtn .functionText {
+  color: #d97706;
+}
+
+/* 申请样品按钮 - 紫色主题 */
+.sampleBtn {
+  background: linear-gradient(145deg, #faf5ff 0%, #f3e8ff 100%);
+  border: 1px solid rgba(147, 51, 234, 0.1);
+}
+
+.sampleBtn:hover {
+  background: linear-gradient(145deg, #f3e8ff 0%, #e9d5ff 100%);
+  border-color: rgba(147, 51, 234, 0.2);
+}
+
+.sampleBtn .functionText {
+  color: #7c3aed;
+}
+
+@media (max-width: 480px) {
+  .statusBar {
+    padding: 12px 0;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .appName {
+    font-size: 20px;
+  }
+  
+  .appSubtitle {
+    font-size: 15px;
+  }
+  
+  .functionSection {
+    padding: 12px 0 16px 0;
+  }
+  
+  .functionGrid {
+    gap: 8px;
+  }
+  
+  .functionBtn {
+    padding: 8px;
+    min-height: 75px;
+    border-radius: 14px;
+  }
+  
+  .functionIcon {
+    font-size: 45px;
+    margin-bottom: 0;
+  }
+  
+  .functionText {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

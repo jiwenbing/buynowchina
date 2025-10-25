@@ -1,0 +1,357 @@
+{
+  "suppliers": [
+    {
+      "id": "supplier-1",
+      "name": "张伟",
+      "company": "深圳优质电子有限公司",
+      "telegramUsername": "zhangwei_electronics",
+      "location": "深圳市",
+      "rating": 4.8,
+      "verified": true,
+      "responseTime": "< 1小时",
+      "languages": [
+        "zh",
+        "en",
+        "ru"
+      ]
+    },
+    {
+      "id": "supplier-2",
+      "name": "李明",
+      "company": "广州服装制造厂",
+      "telegramUsername": "liming_fashion",
+      "location": "广州市",
+      "rating": 4.6,
+      "verified": true,
+      "responseTime": "< 2小时",
+      "languages": [
+        "zh",
+        "en",
+        "ru"
+      ]
+    },
+    {
+      "id": "supplier-3",
+      "name": "王芳",
+      "company": "义乌小商品批发",
+      "telegramUsername": "wangfang_wholesale",
+      "location": "义乌市",
+      "rating": 4.7,
+      "verified": true,
+      "responseTime": "< 30分钟",
+      "languages": [
+        "zh",
+        "en",
+        "ru"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "electronics",
+      "name": "电子产品",
+      "nameEn": "Electronics",
+      "nameRu": "Электроника",
+      "icon": "📱",
+      "productCount": 3
+    },
+    {
+      "id": "fashion",
+      "name": "服装服饰",
+      "nameEn": "Fashion",
+      "nameRu": "Мода",
+      "icon": "👕",
+      "productCount": 1
+    },
+    {
+      "id": "home",
+      "name": "家居用品",
+      "nameEn": "Home & Garden",
+      "nameRu": "Дом и сад",
+      "icon": "🏠",
+      "productCount": 1
+    },
+    {
+      "id": "beauty",
+      "name": "美妆护肤",
+      "nameEn": "Beauty",
+      "nameRu": "Красота",
+      "icon": "💄",
+      "productCount": 1
+    },
+    {
+      "id": "sports",
+      "name": "运动户外",
+      "nameEn": "Sports",
+      "nameRu": "Спорт",
+      "icon": "⚽",
+      "productCount": 1
+    },
+    {
+      "id": "toys",
+      "name": "玩具母婴",
+      "nameEn": "Toys & Baby",
+      "nameRu": "Игрушки и товары для детей",
+      "icon": "🧸",
+      "productCount": 1
+    }
+  ],
+  "products": [
+    {
+      "id": "product-1",
+      "name": "iPhone 15 Pro Max 手机壳",
+      "description": "高品质硅胶材质，完美贴合，提供全方位保护。防摔防刮，手感舒适。",
+      "price": 15.99,
+      "currency": "USD",
+      "images": [
+        "https://cbu01.alicdn.com/img/ibank/O1CN01N3cyMr1dGm1lSkSAv_!!4028793709-0-cib.jpg",
+        "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&h=400&fit=crop"
+      ],
+      "category": "electronics",
+      "supplierId": "supplier-1",
+      "specifications": [
+        {
+          "key": "材质",
+          "value": "硅胶"
+        },
+        {
+          "key": "颜色",
+          "value": "黑色/透明/蓝色"
+        }
+      ],
+      "tags": [
+        "手机配件",
+        "iPhone",
+        "保护壳"
+      ],
+      "inStock": true,
+      "minOrderQuantity": 100,
+      "createdAt": "2024-01-15T08:00:00Z"
+    },
+    {
+      "id": "product-2",
+      "name": "女式羊毛大衣",
+      "description": "100%羊毛制作，保暖舒适，时尚设计，适合秋冬季节穿着。",
+      "price": 89.99,
+      "currency": "USD",
+      "images": [
+        "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400&h=400&fit=crop"
+      ],
+      "category": "fashion",
+      "supplierId": "supplier-2",
+      "specifications": [
+        {
+          "key": "材质",
+          "value": "100%羊毛"
+        },
+        {
+          "key": "尺码",
+          "value": "S/M/L/XL"
+        }
+      ],
+      "tags": [
+        "女装",
+        "大衣",
+        "羊毛"
+      ],
+      "inStock": true,
+      "minOrderQuantity": 100,
+      "createdAt": "2024-01-14T10:30:00Z"
+    },
+    {
+      "id": "product-3",
+      "name": "智能蓝牙音箱",
+      "description": "高保真音质，支持蓝牙5.0连接，内置麦克风，支持语音助手。",
+      "price": 45.50,
+      "currency": "USD",
+      "images": [
+        "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=400&h=400&fit=crop"
+      ],
+      "category": "electronics",
+      "supplierId": "supplier-1",
+      "specifications": [
+        {
+          "key": "功率",
+          "value": "20W"
+        },
+        {
+          "key": "电池续航",
+          "value": "12小时"
+        }
+      ],
+      "tags": [
+        "音箱",
+        "蓝牙",
+        "智能"
+      ],
+      "inStock": true,
+      "minOrderQuantity": 100,
+      "createdAt": "2024-01-13T14:20:00Z"
+    },
+    {
+      "id": "product-4",
+      "name": "多功能收纳盒",
+      "description": "环保PP材质，多格设计，可叠加收纳，适合各种小物件整理。",
+      "price": 12.80,
+      "currency": "USD",
+      "images": [
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1595515106969-1ce29566ff3c?w=400&h=400&fit=crop"
+      ],
+      "category": "home",
+      "supplierId": "supplier-3",
+      "specifications": [
+        {
+          "key": "材质",
+          "value": "PP塑料"
+        },
+        {
+          "key": "尺寸",
+          "value": "30×20×15cm"
+        }
+      ],
+      "tags": [
+        "收纳",
+        "整理",
+        "家居"
+      ],
+      "inStock": true,
+      "minOrderQuantity": 100,
+      "createdAt": "2024-01-12T16:45:00Z"
+    },
+    {
+      "id": "product-5",
+      "name": "无线充电器",
+      "description": "15W快速无线充电，支持多种设备，智能识别，安全高效。",
+      "price": 28.90,
+      "currency": "USD",
+      "images": [
+        "https://images.unsplash.com/photo-1609592806444-c3e8d8b0e281?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=400&fit=crop"
+      ],
+      "category": "electronics",
+      "supplierId": "supplier-1",
+      "specifications": [
+        {
+          "key": "功率",
+          "value": "15W"
+        },
+        {
+          "key": "兼容性",
+          "value": "iPhone/Android"
+        }
+      ],
+      "tags": [
+        "无线充电",
+        "快充",
+        "智能"
+      ],
+      "inStock": true,
+      "minOrderQuantity": 100,
+      "createdAt": "2024-01-11T09:15:00Z"
+    },
+    {
+      "id": "product-6",
+      "name": "儿童积木玩具",
+      "description": "环保ABS材质，益智拼装，培养动手能力，适合3-8岁儿童。",
+      "price": 35.60,
+      "currency": "USD",
+      "images": [
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=400&fit=crop"
+      ],
+      "category": "toys",
+      "supplierId": "supplier-3",
+      "specifications": [
+        {
+          "key": "材质",
+          "value": "ABS塑料"
+        },
+        {
+          "key": "年龄",
+          "value": "3-8岁"
+        }
+      ],
+      "tags": [
+        "玩具",
+        "积木",
+        "益智"
+      ],
+      "inStock": true,
+      "minOrderQuantity": 100,
+      "createdAt": "2024-01-10T14:30:00Z"
+    },
+    {
+      "id": "product-7",
+      "name": "运动水杯",
+      "description": "304不锈钢材质，保温保冷，大容量设计，运动必备。",
+      "price": 22.30,
+      "currency": "USD",
+      "images": [
+        "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400&h=400&fit=crop"
+      ],
+      "category": "sports",
+      "supplierId": "supplier-2",
+      "specifications": [
+        {
+          "key": "材质",
+          "value": "304不锈钢"
+        },
+        {
+          "key": "容量",
+          "value": "750ml"
+        }
+      ],
+      "tags": [
+        "运动",
+        "水杯",
+        "保温"
+      ],
+      "inStock": true,
+      "minOrderQuantity": 100,
+      "createdAt": "2024-01-09T11:20:00Z"
+    },
+    {
+      "id": "product-8",
+      "name": "面膜套装",
+      "description": "天然植物精华，深层补水，修复肌肤，一盒10片装。",
+      "price": 18.80,
+      "currency": "USD",
+      "images": [
+        "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1570554886111-e80fcac6c97c?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&h=400&fit=crop"
+      ],
+      "category": "beauty",
+      "supplierId": "supplier-2",
+      "specifications": [
+        {
+          "key": "数量",
+          "value": "10片/盒"
+        },
+        {
+          "key": "功效",
+          "value": "补水保湿"
+        }
+      ],
+      "tags": [
+        "面膜",
+        "护肤",
+        "补水"
+      ],
+      "inStock": true,
+      "minOrderQuantity": 100,
+      "createdAt": "2024-01-08T15:45:00Z"
+    }
+  ]
+}

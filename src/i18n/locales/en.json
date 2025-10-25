@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Buy Now China",
+    "subtitle": "Quality Chinese Products · Direct to Russia"
+  },
+  "navigation": {
+    "home": "Home",
+    "categories": "Categories",
+    "favorites": "Favorites",
+    "profile": "Profile"
+  },
+  "product": {
+    "title": "Product",
+    "price": "Price",
+    "description": "Description",
+    "specifications": "Specifications",
+    "supplier": "Supplier",
+    "contactSupplier": "Contact Supplier",
+    "purchaseIntent": "Purchase Intent",
+    "tryProduct": "Try Product",
+    "addToFavorites": "Add to Favorites",
+    "share": "Share Product",
+    "minOrder": "Min Order",
+    "outOfStock": "Out of Stock",
+    "noProductsFound": "No products found",
+    "notFound": "Product not found"
+  },
+  "actions": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "save": "Save"
+  },
+  "messages": {
+    "loading": "Loading...",
+    "noData": "No data available",
+    "error": "An error occurred",
+    "success": "Operation successful",
+    "contactSuccess": "Contact request sent to Telegram",
+    "intentSubmitted": "Purchase intent submitted",
+    "linkCopied": "Link copied to clipboard",
+    "minOrderError": "Minimum order quantity is {{min}}",
+    "contactSupplier": "Contact supplier about product"
+  },
+  "forms": {
+    "quantity": "Quantity",
+    "message": "Message",
+    "contactInfo": "Contact Info",
+    "requirements": "Requirements",
+    "messagePlaceholder": "Please enter your message...",
+    "requirementsPlaceholder": "Please describe your requirements in detail...",
+    "contactInfoPlaceholder": "Please enter your contact information"
+  },
+  "search": {
+    "placeholder": "Search products..."
+  },
+  "categories": {
+    "all": "All"
+  },
+  "supplier": {
+    "verified": "Verified",
+    "rating": "Rating",
+    "responseTime": "Response Time",
+    "languages": "Languages"
+  },
+  "settings": {
+    "selectLanguage": "Select Language"
+  },
+  "functions": {
+    "contactPlatform": "Contact Platform",
+    "merchantCooperation": "Merchant Cooperation",
+    "requestSample": "Request Sample"
+  }
+}
