@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import WebApp from '@twa-dev/sdk';
 import ProductDetail from '../components/ProductDetail';
 import { mockProducts } from '../data/mockData';
 
@@ -12,22 +11,7 @@ const ProductDetailPage: React.FC = () => {
 
   const product = mockProducts.find(p => p.id === productId);
 
-  useEffect(() => {
-    // 设置Telegram Web App主按钮
-    WebApp.MainButton.setText(t('actions.back'));
-    WebApp.MainButton.show();
-    
-    const handleMainButtonClick = () => {
-      navigate('/buynowchina');
-    };
-    
-    WebApp.MainButton.onClick(handleMainButtonClick);
-    
-    return () => {
-      WebApp.MainButton.offClick(handleMainButtonClick);
-      WebApp.MainButton.hide();
-    };
-  }, [navigate, t]);
+  // 移除 Telegram 底部 MainButton，保留页面内顶部返回按钮
 
   const handleBack = () => {
     navigate('/buynowchina');
