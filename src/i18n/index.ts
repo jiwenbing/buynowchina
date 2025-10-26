@@ -21,13 +21,16 @@ i18n
         translation: ruTranslations
       }
     },
+    // 默认语言改为俄语
+    lng: 'ru',
     fallbackLng: 'ru',
     debug: false,
     interpolation: {
       escapeValue: false
     },
     detection: {
-      order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
+      // 移除 navigator，避免根据系统语言默认成非俄语
+      order: ['querystring', 'localStorage', 'cookie', 'htmlTag'],
       caches: ['localStorage', 'cookie']
     }
   });
