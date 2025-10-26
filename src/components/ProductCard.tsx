@@ -8,14 +8,18 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  
+  // 根据当前语言选择显示的名称和描述
+  const displayName = i18n.language === 'ru' && product.nameRu ? product.nameRu : product.name;
+  const displayDescription = i18n.language === 'ru' && product.descriptionRu ? product.descriptionRu : product.description;
 
   return (
     <div className="product-card card" onClick={onClick}>
       <div className="product-image">
         <img 
           src={product.images[0]} 
-          alt={product.name}
+          alt={displayName}
           loading="lazy"
         />
         {!product.inStock && (
@@ -26,12 +30,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
       </div>
       
       <div className="card-body">
-        <h3 className="product-name">{product.name}</h3>
-        <p className="product-description">{product.description}</p>
+        <h3 className="product-name">{displayName}</h3>
+        <p className="product-description">{displayDescription}</p>
         
         <div className="product-meta">
           <div className="price-section">
-            <span className="price">${product.price.toFixed(2)}</span>
+            <span className="price">₽{Math.round(product.price)}</span>
             <span className="currency">{product.currency}</span>
           </div>
           
@@ -68,16 +72,20 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
         .product-image {
           position: relative;
           width: 100%;
-          height: 140px;
+          padding-top: 100%; /* 1:1 宽高比，适合正方形图片 */
           overflow: hidden;
           background: #f8f9fa;
         }
         
         .product-image img {
+          position: absolute;
+          top: 0;
+          left: 0;
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain; /* 改为contain以完整显示正方形图片 */
           transition: var(--transition);
+          padding: 8px; /* 添加内边距让图片有呼吸感 */
         }
         
         .product-card:hover .product-image img {
@@ -177,7 +185,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
         
         @media (max-width: 480px) {
           .product-image {
-            height: 120px;
+            padding-top: 100%; /* 保持正方形比例 */
           }
           
           .product-name {

@@ -71,13 +71,17 @@ mkdir -p src/images/product-4
 1. **product-1**: 高级软毛牙刷 - ¥5.01
 2. **product-2**: EVA拖鞋 - ¥3.99  
 3. **product-3**: 厨房毛巾 - ¥1.95
+4. **product-4**: iPhone手机壳 - ¥4.50
+5. **product-5**: 车载磁吸支架 - ¥5.50
+6. **product-6**: iPhone钢化膜 - ¥2.00
+7. **product-7**: 电动剃须刀 - ¥13.70
+8. **product-8**: 美容院面膜 - ¥1.60
+9. **product-9**: NB580运动鞋 - ¥90.00
+10. **product-10**: 针织帽 - ¥10.50
+11. **product-11**: 保暖内衣套装 - ¥13.00
+12. **product-12**: 男士牛仔裤 - ¥26.98
 
-### 待处理 ⏳
-4. **product-4**: https://detail.1688.com/offer/927875250705.html
-5. **product-5**: https://detail.1688.com/offer/726918675419.html
-6. **product-6**: https://detail.1688.com/offer/679563918229.html
-7. **product-7**: https://detail.1688.com/offer/647748595882.html
-8. **product-8**: https://detail.1688.com/offer/663281028753.html
+### 所有12个商品已完成！🎉
 
 ## 供应商分配建议
 

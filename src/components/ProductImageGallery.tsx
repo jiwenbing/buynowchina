@@ -63,16 +63,24 @@ const ProductImageGallery: React.FC<ProductImageGalleryProps> = ({ images, alt }
         .main-image {
           position: relative;
           width: 100%;
-          height: 300px;
+          height: 0;
+          padding-top: 100%; /* 1:1 宽高比，适合正方形图片 */
           display: flex;
           align-items: center;
           justify-content: center;
           overflow: hidden;
+          background: white;
         }
         
         .main-image img {
-          width: 100%;
-          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;
+          width: auto;
+          height: auto;
           object-fit: contain;
           background: white;
         }
@@ -137,6 +145,9 @@ const ProductImageGallery: React.FC<ProductImageGalleryProps> = ({ images, alt }
           cursor: pointer;
           transition: var(--transition);
           background: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         
         .thumbnail.active {
@@ -144,9 +155,11 @@ const ProductImageGallery: React.FC<ProductImageGalleryProps> = ({ images, alt }
         }
         
         .thumbnail img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+          max-width: 100%;
+          max-height: 100%;
+          width: auto;
+          height: auto;
+          object-fit: contain; /* 改为contain以完整显示正方形缩略图 */
         }
         
         .thumbnail:hover {
@@ -155,7 +168,7 @@ const ProductImageGallery: React.FC<ProductImageGalleryProps> = ({ images, alt }
         
         @media (max-width: 480px) {
           .main-image {
-            height: 250px;
+            padding-top: 100%; /* 保持正方形比例 */
           }
           
           .nav-btn {

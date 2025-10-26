@@ -16,12 +16,15 @@ const PurchaseIntentModal: React.FC<PurchaseIntentModalProps> = ({
   onClose,
   onSubmit
 }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [quantity, setQuantity] = useState(product.minOrderQuantity);
   const [message, setMessage] = useState('');
   const [requirements, setRequirements] = useState('');
   const [contactInfo, setContactInfo] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // 根据当前语言选择显示的名称
+  const displayName = i18n.language === 'ru' && product.nameRu ? product.nameRu : product.name;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,7 +51,7 @@ const PurchaseIntentModal: React.FC<PurchaseIntentModalProps> = ({
       // 发送消息到Telegram
       const telegramMessage = encodeURIComponent(
         `${type === 'trial' ? t('product.tryProduct') : t('product.purchaseIntent')}\n\n` +
-        `${t('product.title')}: ${product.name}\n` +
+        `${t('product.title')}: ${displayName}\n` +
         `${t('forms.quantity')}: ${intentData.quantity}\n` +
         `${t('forms.message')}: ${message}\n` +
         `${t('forms.requirements')}: ${requirements}\n` +
@@ -79,10 +82,10 @@ const PurchaseIntentModal: React.FC<PurchaseIntentModalProps> = ({
 
         <div className="modal-body">
           <div className="product-summary">
-            <img src={product.images[0]} alt={product.name} className="product-thumb" />
+            <img src={product.images[0]} alt={displayName} className="product-thumb" />
             <div className="product-info">
-              <h3>{product.name}</h3>
-              <p className="price">${product.price.toFixed(2)} {product.currency}</p>
+              <h3>{displayName}</h3>
+              <p className="price">₽{Math.round(product.price)} {product.currency}</p>
             </div>
           </div>
 

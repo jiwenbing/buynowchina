@@ -1,7 +1,9 @@
 export interface Product {
   id: string;
   name: string;
+  nameRu?: string;
   description: string;
+  descriptionRu?: string;
   price: number;
   currency: string;
   images: string[];
@@ -28,7 +30,9 @@ export interface Supplier {
 
 export interface ProductSpecification {
   key: string;
+  keyRu?: string;
   value: string;
+  valueRu?: string;
 }
 
 export interface PurchaseIntent {

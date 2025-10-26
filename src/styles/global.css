@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+/* Telegram Mini App 安全区域适配 */
+html {
+  /* 支持iOS安全区域 */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -14,6 +20,11 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   font-size: 16px; /* 基础字体大小增加 */
+  /* Telegram Mini App优化 */
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none; /* 防止过度滚动 */
 }
 
 #root {
