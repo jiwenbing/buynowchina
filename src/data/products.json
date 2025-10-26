@@ -103,12 +103,12 @@
       "nameRu": "Премиальная зубная щетка с мягкой щетиной и широкой головкой",
       "description": "C端爆款高级软毛牙刷，宽头清洁护龈，INS风防滑手柄设计，适合情侣家用。软毛设计呵护牙龈，大宽头提供全面清洁，防滑手柄握感舒适，性价比超高。全网销量1.0万+件成交。",
       "descriptionRu": "Популярная премиальная зубная щетка с мягкой щетиной, широкой головкой для защиты десен, нескользящей ручкой в стиле INS. Подходит для пар и домашнего использования. Мягкая щетина бережно ухаживает за деснами, широкая головка обеспечивает полную чистку, удобная рукоятка. Отличное соотношение цены и качества. Продано более 10 000+ штук.",
-      "price": 129,
+      "price": 229,
       "currency": "RUB",
       "images": [
-        "/src/images/product-1/1.jpg",
-        "/src/images/product-1/2.jpg",
-        "/src/images/product-1/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-1/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-1/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-1/3.jpg"
       ],
       "category": "home",
       "supplierId": "supplier-3",
@@ -169,12 +169,12 @@
       "nameRu": "Летние тапочки EVA для мужчин и женщин, домашние шлепанцы",
       "description": "EVA材质情侣拖鞋，适合夏天家居使用。一字拖设计，穿着舒适，防滑鞋底，适合室内浴室洗澡使用。多种颜色可选，男女通用，全网销量9.7万+双成交。",
       "descriptionRu": "Парные тапочки из материала EVA, подходят для летнего домашнего использования. Дизайн с одной полоской, удобные в носке, противоскользящая подошва, идеальны для использования в ванной комнате. Доступны различные цвета, универсальны для мужчин и женщин. Продано более 97 000+ пар.",
-      "price": 98,
+      "price": 208,
       "currency": "RUB",
       "images": [
-        "/src/images/product-2/1.jpg",
-        "/src/images/product-2/2.jpg",
-        "/src/images/product-2/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-2/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-2/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-2/3.jpg"
       ],
       "category": "fashion",
       "supplierId": "supplier-2",
@@ -232,12 +232,12 @@
       "nameRu": "Хлопковые вафельные кухонные полотенца с крючком",
       "description": "亚马逊热销纯棉蜂窝厨房毛巾，华夫格设计，易清洁带挂钩。32股纯棉材质，吸水性强（0-5s），支持一件代发。多种颜色和规格可选，一年内10万+条成交。",
       "descriptionRu": "Хит продаж на Amazon - кухонные полотенца из чистого хлопка с вафельным дизайном, легко чистятся, с крючком для подвешивания. Материал из 32-ниточного чистого хлопка, отличная впитываемость (0-5 сек). Поддержка дропшиппинга. Доступны различные цвета и размеры. Продано более 100 000+ штук за год.",
-      "price": 58,
+      "price": 229,
       "currency": "RUB",
       "images": [
-        "/src/images/product-3/1.jpg",
-        "/src/images/product-3/2.jpg",
-        "/src/images/product-3/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-3/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-3/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-3/3.jpg"
       ],
       "category": "home",
       "supplierId": "supplier-1",
@@ -295,12 +295,12 @@
       "nameRu": "Магнитный чехол для iPhone с матовой текстурой",
       "description": "C端爆款磁吸手机壳，TPI+PC材质，磨砂肤感设计，支持iPhone17/16/15全系列。防震、磁吸、防磨、防摔四重保护，多种时尚配色可选。一年内销量10万+，评价5.0分，好评率100%。佛山三丰品牌，品质保证。",
       "descriptionRu": "Популярный магнитный чехол для телефона из материала TPI+PC с матовой текстурой, поддерживает все серии iPhone17/16/15. Четырехуровневая защита: амортизация, магнит, защита от царапин и падений. Доступны различные модные цвета. Продано более 100 000+ шт за год, рейтинг 5.0, 100% положительных отзывов. Бренд Sanfeng из Фошань.",
-      "price": 139,
+      "price": 519,
       "currency": "RUB",
       "images": [
-        "/src/images/product-4/1.jpg",
-        "/src/images/product-4/2.jpg",
-        "/src/images/product-4/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-4/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-4/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-4/3.jpg"
       ],
       "category": "electronics",
       "supplierId": "supplier-1",
@@ -359,12 +359,12 @@
       "nameRu": "Магнитный автомобильный держатель для телефона с поворотом на 360°",
       "description": "跨境爆款车载支架，真空磁吸设计，360度旋转，通用型金属支架。粘贴式安装，适用于仪表台，支持所有手机型号。一年内销量1万+，评价5.0分，好评率99.4%。深圳昇亿成工厂直供，多种款式可选。",
       "descriptionRu": "Популярный автомобильный держатель с вакуумным магнитным креплением, поворот на 360°, универсальный металлический держатель. Клейкая установка, подходит для приборной панели, поддерживает все модели телефонов. Продано более 10 000+ шт за год, рейтинг 5.0, 99.4% положительных отзывов. Прямые поставки с завода Shengyicheng в Шэньчжэне.",
-      "price": 189,
+      "price": 689,
       "currency": "RUB",
       "images": [
-        "/src/images/product-5/1.jpg",
-        "/src/images/product-5/2.jpg",
-        "/src/images/product-5/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-5/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-5/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-5/3.jpg"
       ],
       "category": "electronics",
       "supplierId": "supplier-1",
@@ -423,12 +423,12 @@
       "nameRu": "Защитное стекло для iPhone с антибликовым покрытием",
       "description": "C端爆款钢化玻璃膜，支持iPhone17/16/15全系列。多种功能可选：高清、防窥、抗蓝光、防指纹。全屏保护，听筒防尘设计，配贴膜工具。全网销量10万+张，评价4.9分，好评率96.8%。深圳鸿帝鑫工厂直供。",
       "descriptionRu": "Популярное закаленное стекло, поддерживает все серии iPhone17/16/15. Доступны различные функции: HD, защита от подглядывания, защита от синего света, защита от отпечатков пальцев. Полноэкранная защита, пылезащитный дизайн для динамика, в комплекте инструменты для наклейки. Продано более 100 000+ шт, рейтинг 4.9, 96.8% положительных отзывов. Завод Hongdixin, Шэньчжэнь.",
-      "price": 49,
+      "price": 490,
       "currency": "RUB",
       "images": [
-        "/src/images/product-6/1.jpg",
-        "/src/images/product-6/2.jpg",
-        "/src/images/product-6/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-6/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-6/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-6/3.jpg"
       ],
       "category": "electronics",
       "supplierId": "supplier-1",
@@ -484,9 +484,9 @@
       "price": 289,
       "currency": "RUB",
       "images": [
-        "/src/images/product-7/1.jpg",
-        "/src/images/product-7/2.jpg",
-        "/src/images/product-7/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-7/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-7/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-7/3.jpg"
       ],
       "category": "electronics",
       "supplierId": "supplier-3",
@@ -553,9 +553,9 @@
       "price": 59,
       "currency": "RUB",
       "images": [
-        "/src/images/product-8/1.jpg",
-        "/src/images/product-8/2.jpg",
-        "/src/images/product-8/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-8/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-8/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-8/3.jpg"
       ],
       "category": "beauty",
       "supplierId": "supplier-2",
@@ -620,9 +620,9 @@
       "price": 2170,
       "currency": "RUB",
       "images": [
-        "/src/images/product-9/1.jpg",
-        "/src/images/product-9/2.jpg",
-        "/src/images/product-9/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-9/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-9/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-9/3.jpg"
       ],
       "category": "sports",
       "supplierId": "supplier-2",
@@ -694,12 +694,12 @@
       "nameRu": "Зимняя вязаная шапка с маской, хлопок, утепленная",
       "description": "跨境热销针织帽，精梳棉材质，96%以上纯棉含量。面罩两用设计，加厚保暖，无檐圆顶款式。多款可选：面罩款、经典羊毛款、立体款、堆堆帽等。一年内销量7900+顶，评价4.6分，好评率90.4%。义乌谷登工厂直供，欧美风格。",
       "descriptionRu": "Популярная вязаная шапка для экспорта, материал из гребенного хлопка, содержание хлопка более 96%. Дизайн 2-в-1 с маской, утепленная, стиль без полей с круглой макушкой. Доступны различные модели: с маской, классическая шерстяная, объемная, слауч и др. Продано более 7900+ шт за год, рейтинг 4.6, 90.4% положительных отзывов. Завод Guodeng, Иу, европейский стиль.",
-      "price": 276,
+      "price": 676,
       "currency": "RUB",
       "images": [
-        "/src/images/product-10/1.jpg",
-        "/src/images/product-10/2.jpg",
-        "/src/images/product-10/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-10/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-10/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-10/3.jpg"
       ],
       "category": "fashion",
       "supplierId": "supplier-2",
@@ -772,9 +772,9 @@
       "price": 369,
       "currency": "RUB",
       "images": [
-        "/src/images/product-11/1.jpg",
-        "/src/images/product-11/2.jpg",
-        "/src/images/product-11/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-11/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-11/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-11/3.jpg"
       ],
       "category": "fashion",
       "supplierId": "supplier-2",
@@ -859,9 +859,9 @@
       "price": 850,
       "currency": "RUB",
       "images": [
-        "/src/images/product-12/1.jpg",
-        "/src/images/product-12/2.jpg",
-        "/src/images/product-12/3.jpg"
+        "https://www.xfx365.com/buynowchina/src/images/product-12/1.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-12/2.jpg",
+        "https://www.xfx365.com/buynowchina/src/images/product-12/3.jpg"
       ],
       "category": "fashion",
       "supplierId": "supplier-2",
