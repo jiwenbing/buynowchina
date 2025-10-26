@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // 使用相对路径
+  base: 'https://www.xfx365.com/buynowchina/dist/', // 使用相对路径
   server: {
     allowedHosts: [
       'www.letsfund.us',
