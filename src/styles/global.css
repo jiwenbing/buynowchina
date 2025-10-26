@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
+  font-size: 16px; /* 基础字体大小增加 */
 }
 
 #root {

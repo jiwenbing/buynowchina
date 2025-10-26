@@ -37,6 +37,11 @@ const HomePage: React.FC = () => {
     WebApp.openTelegramLink(`https://t.me/buynowchina_samples?text=${message}`);
   };
 
+  const handleContactUs = () => {
+    const message = encodeURIComponent(t('contactUs.message'));
+    WebApp.openTelegramLink(`https://t.me/buynowchina_support?text=${message}`);
+  };
+
   return (
     <div className="app">
       <Header 
@@ -49,6 +54,7 @@ const HomePage: React.FC = () => {
       <ProductList 
         products={mockProducts}
         onProductSelect={handleProductSelect}
+        onContactUs={handleContactUs}
       />
       
       {showLanguageSelector && (

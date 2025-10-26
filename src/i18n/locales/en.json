@@ -72,5 +72,10 @@
     "contactPlatform": "Contact Platform",
     "merchantCooperation": "Merchant Cooperation",
     "requestSample": "Request Sample"
+  },
+  "contactUs": {
+    "title": "What? Can't find what you want?",
+    "subtitle": "Contact us now, we have everything!",
+    "message": "What? Can't find what you want? Contact us now, we have everything!"
   }
 }

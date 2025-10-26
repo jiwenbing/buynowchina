@@ -8,7 +8,6 @@ export interface Product {
   category: string;
   supplier: Supplier;
   specifications: ProductSpecification[];
-  tags: string[];
   inStock: boolean;
   minOrderQuantity: number;
   createdAt: string;

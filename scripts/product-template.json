@@ -1,0 +1,35 @@
+{
+  "id": "product-X",
+  "name": "商品名称（从1688获取）",
+  "description": "商品描述（从1688获取，包含卖点和销量信息）",
+  "price": 0.00,
+  "currency": "CNY",
+  "images": [
+    "/src/images/product-X/1.jpg",
+    "/src/images/product-X/2.jpg",
+    "/src/images/product-X/3.jpg"
+  ],
+  "category": "electronics|fashion|home|beauty|sports|toys",
+  "supplierId": "supplier-1|supplier-2|supplier-3",
+  "specifications": [
+    {
+      "key": "规格参数名称",
+      "value": "规格参数值"
+    },
+    {
+      "key": "材质",
+      "value": "材质信息"
+    },
+    {
+      "key": "颜色",
+      "value": "颜色选项"
+    },
+    {
+      "key": "尺寸",
+      "value": "尺寸规格"
+    }
+  ],
+  "inStock": true,
+  "minOrderQuantity": 100,
+  "createdAt": "2024-01-XX"
+}

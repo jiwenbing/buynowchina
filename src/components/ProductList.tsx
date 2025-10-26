@@ -6,9 +6,10 @@ import ProductCard from './ProductCard';
 interface ProductListProps {
   products: Product[];
   onProductSelect: (product: Product) => void;
+  onContactUs?: () => void;
 }
 
-const ProductList: React.FC<ProductListProps> = ({ products, onProductSelect }) => {
+const ProductList: React.FC<ProductListProps> = ({ products, onProductSelect, onContactUs }) => {
   const { t } = useTranslation();
 
   if (products.length === 0) {
@@ -61,9 +62,21 @@ const ProductList: React.FC<ProductListProps> = ({ products, onProductSelect }) 
             />
           ))}
         </div>
+        
+        {/* 联系我们卡片 */}
+        {onContactUs && (
+          <div className="contact-us-card" onClick={onContactUs}>
+            <div className="contact-icon">🎯</div>
+            <div className="contact-text">
+              <h3>{t('contactUs.title')}</h3>
+              <p>{t('contactUs.subtitle')}</p>
+            </div>
+            <div className="contact-arrow">→</div>
+          </div>
+        )}
       </div>
       
-      <style jsx>{`
+      <style>{`
         .product-list {
           padding: 8px 0;
           min-height: calc(100vh - 180px);
@@ -82,6 +95,60 @@ const ProductList: React.FC<ProductListProps> = ({ products, onProductSelect }) 
           }
         }
         
+        .contact-us-card {
+          grid-column: 1 / -1; /* 跨越所有列 */
+          background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+          color: white;
+          border-radius: 12px;
+          padding: 20px;
+          margin-top: 16px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        .contact-us-card:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+        }
+        
+        .contact-icon {
+          font-size: 32px;
+          flex-shrink: 0;
+        }
+        
+        .contact-text {
+          flex: 1;
+        }
+        
+        .contact-text h3 {
+          font-size: 16px;
+          font-weight: bold;
+          margin: 0 0 4px 0;
+          line-height: 1.3;
+        }
+        
+        .contact-text p {
+          font-size: 14px;
+          margin: 0;
+          opacity: 0.9;
+          line-height: 1.4;
+        }
+        
+        .contact-arrow {
+          font-size: 24px;
+          font-weight: bold;
+          flex-shrink: 0;
+          transition: transform 0.3s ease;
+        }
+        
+        .contact-us-card:hover .contact-arrow {
+          transform: translateX(4px);
+        }
+
         @media (max-width: 480px) {
           .product-list {
             padding: 6px 0;
@@ -89,6 +156,28 @@ const ProductList: React.FC<ProductListProps> = ({ products, onProductSelect }) 
           
           .products-grid {
             gap: 4px;
+          }
+          
+          .contact-us-card {
+            margin-top: 12px;
+            padding: 16px;
+            gap: 12px;
+          }
+          
+          .contact-icon {
+            font-size: 28px;
+          }
+          
+          .contact-text h3 {
+            font-size: 15px;
+          }
+          
+          .contact-text p {
+            font-size: 13px;
+          }
+          
+          .contact-arrow {
+            font-size: 20px;
           }
         }
       `}</style>

@@ -30,25 +30,32 @@ const Header: React.FC<HeaderProps> = ({
     <header className={styles.header}>
       {/* 顶部状态栏 */}
       <div className={styles.statusBar}>
-        <div className="container flex-between">
-          <div className={styles.logoSection}>
-            <img 
-              src="https://www.xfx365.com/buynowchina/buy-logo.jpg"
-              alt="BNC Logo" 
-              className={styles.logo}
-            />
-            <div className={styles.appInfo}>
-              <h1 className={styles.appName}>{t('app.title')}</h1>
-              <p className={styles.appSubtitle}>{t('app.subtitle')}</p>
+        <div className="container">
+          <div className={styles.logoRow}>
+            <div className={styles.logoLeft}></div>
+            
+            <div className={styles.logoCenter}>
+              <img 
+                src="https://www.xfx365.com/buynowchina/buy-logo.jpg"
+                alt="BNC Logo" 
+                className={styles.logo}
+              />
+            </div>
+            
+            <div className={styles.logoRight}>
+              <button 
+                className={styles.languageBtn}
+                onClick={onLanguageClick}
+              >
+                <span className={styles.languageFlag}>{getLanguageFlag(i18n.language)}</span>
+              </button>
             </div>
           </div>
           
-          <button 
-            className={styles.languageBtn}
-            onClick={onLanguageClick}
-          >
-            <span className={styles.languageFlag}>{getLanguageFlag(i18n.language)}</span>
-          </button>
+          <div className={styles.titleSection}>
+            <h1 className={styles.appName}>{t('app.title')}</h1>
+            <p className={styles.appSubtitle}>{t('app.subtitle')}</p>
+          </div>
         </div>
       </div>
 

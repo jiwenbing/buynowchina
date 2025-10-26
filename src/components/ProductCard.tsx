@@ -97,7 +97,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
         }
         
         .product-name {
-          font-size: 15px;
+          font-size: 17px;
           font-weight: 500;
           margin: 0 0 4px 0;
           line-height: 1.3;
@@ -106,11 +106,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
-          min-height: 38px;
+          min-height: 42px;
         }
         
         .product-description {
-          font-size: 12px;
+          font-size: 14px;
           color: var(--tg-theme-hint-color, #666);
           margin: 0 0 8px 0;
           line-height: 1.3;
@@ -118,7 +118,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
           -webkit-line-clamp: 1;
           -webkit-box-orient: vertical;
           overflow: hidden;
-          min-height: 16px;
+          min-height: 18px;
         }
         
         .product-meta {
@@ -133,13 +133,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
         }
         
         .price {
-          font-size: 18px;
+          font-size: 20px;
           font-weight: bold;
           color: #ff6b35;
         }
         
         .currency {
-          font-size: 13px;
+          font-size: 15px;
           color: var(--tg-theme-hint-color, #666);
         }
         
@@ -147,12 +147,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
           display: flex;
           align-items: center;
           gap: 4px;
-          font-size: 11px;
+          font-size: 13px;
           color: var(--tg-theme-hint-color, #666);
         }
         
         .supplier-icon {
-          font-size: 13px;
+          font-size: 15px;
         }
         
         .supplier-name {
@@ -170,7 +170,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
         }
         
         .min-order {
-          font-size: 11px;
+          font-size: 13px;
           color: var(--tg-theme-hint-color, #999);
           white-space: nowrap;
         }
@@ -181,17 +181,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
           }
           
           .product-name {
-            font-size: 14px;
-            min-height: 34px;
+            font-size: 16px;
+            min-height: 38px;
           }
           
           .product-description {
-            font-size: 11px;
-            min-height: 14px;
+            font-size: 13px;
+            min-height: 16px;
           }
           
           .price {
-            font-size: 16px;
+            font-size: 18px;
           }
           
           .supplier-name {

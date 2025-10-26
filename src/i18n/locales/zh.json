@@ -72,5 +72,10 @@
     "contactPlatform": "联系平台",
     "merchantCooperation": "商家合作",
     "requestSample": "申请样品"
+  },
+  "contactUs": {
+    "title": "什么？没找到你想要的？",
+    "subtitle": "那就立刻联系我们，我们拥有任何东西",
+    "message": "什么？没找到你想要的？那就立刻联系我们，我们拥有任何东西！"
   }
 }

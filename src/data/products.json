@@ -99,31 +99,50 @@
   "products": [
     {
       "id": "product-1",
-      "name": "iPhone 15 Pro Max 手机壳",
-      "description": "高品质硅胶材质，完美贴合，提供全方位保护。防摔防刮，手感舒适。",
-      "price": 15.99,
-      "currency": "USD",
+      "name": "高级软毛牙刷宽头清洁护龈INS风防滑手柄情侣家用牙刷",
+      "description": "C端爆款高级软毛牙刷，宽头清洁护龈，INS风防滑手柄设计，适合情侣家用。软毛设计呵护牙龈，大宽头提供全面清洁，防滑手柄握感舒适，性价比超高。全网销量1.0万+件成交。",
+      "price": 5.01,
+      "currency": "CNY",
       "images": [
-        "https://cbu01.alicdn.com/img/ibank/O1CN01N3cyMr1dGm1lSkSAv_!!4028793709-0-cib.jpg",
-        "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&h=400&fit=crop"
+        "/src/images/product-1/1.jpg",
+        "/src/images/product-1/2.jpg",
+        "/src/images/product-1/3.jpg"
       ],
-      "category": "electronics",
-      "supplierId": "supplier-1",
+      "category": "home",
+      "supplierId": "supplier-3",
       "specifications": [
         {
-          "key": "材质",
-          "value": "硅胶"
+          "key": "品牌",
+          "value": "oralgos"
         },
         {
-          "key": "颜色",
-          "value": "黑色/透明/蓝色"
+          "key": "适用人群",
+          "value": "成人"
+        },
+        {
+          "key": "规格",
+          "value": "两支装"
+        },
+        {
+          "key": "型号",
+          "value": "DB-XA007"
+        },
+        {
+          "key": "产品类别",
+          "value": "手动"
+        },
+        {
+          "key": "功能",
+          "value": "软毛"
+        },
+        {
+          "key": "产地",
+          "value": "中国大陆"
+        },
+        {
+          "key": "重量",
+          "value": "50g"
         }
-      ],
-      "tags": [
-        "手机配件",
-        "iPhone",
-        "保护壳"
       ],
       "inStock": true,
       "minOrderQuantity": 100,
@@ -131,31 +150,50 @@
     },
     {
       "id": "product-2",
-      "name": "女式羊毛大衣",
-      "description": "100%羊毛制作，保暖舒适，时尚设计，适合秋冬季节穿着。",
-      "price": 89.99,
-      "currency": "USD",
+      "name": "拖鞋女夏天拖鞋男家居鞋家用室内浴室洗澡情侣EVA拖鞋凉拖男批发",
+      "description": "EVA材质情侣拖鞋，适合夏天家居使用。一字拖设计，穿着舒适，防滑鞋底，适合室内浴室洗澡使用。多种颜色可选，男女通用，全网销量9.7万+双成交。",
+      "price": 3.99,
+      "currency": "CNY",
       "images": [
-        "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400&h=400&fit=crop"
+        "/src/images/product-2/1.jpg",
+        "/src/images/product-2/2.jpg",
+        "/src/images/product-2/3.jpg"
       ],
       "category": "fashion",
       "supplierId": "supplier-2",
       "specifications": [
         {
-          "key": "材质",
-          "value": "100%羊毛"
+          "key": "适用性别",
+          "value": "中性/男女均可"
+        },
+        {
+          "key": "鞋底材质",
+          "value": "EVA"
+        },
+        {
+          "key": "鞋面材质",
+          "value": "EVA"
+        },
+        {
+          "key": "款式",
+          "value": "一字拖"
+        },
+        {
+          "key": "品牌",
+          "value": "一方通行"
+        },
+        {
+          "key": "颜色",
+          "value": "白色,粉红色,绿色,黑色,灰色"
         },
         {
           "key": "尺码",
-          "value": "S/M/L/XL"
+          "value": "36-37码,38-39码,40-41码,42-43码,44-45码"
+        },
+        {
+          "key": "重量",
+          "value": "100g"
         }
-      ],
-      "tags": [
-        "女装",
-        "大衣",
-        "羊毛"
       ],
       "inStock": true,
       "minOrderQuantity": 100,
@@ -163,31 +201,50 @@
     },
     {
       "id": "product-3",
-      "name": "智能蓝牙音箱",
-      "description": "高保真音质，支持蓝牙5.0连接，内置麦克风，支持语音助手。",
-      "price": 45.50,
-      "currency": "USD",
+      "name": "亚马逊热销纯棉蜂窝厨房方巾毛巾套装易清洁带挂钩华夫格方巾批发",
+      "description": "亚马逊热销纯棉蜂窝厨房毛巾，华夫格设计，易清洁带挂钩。32股纯棉材质，吸水性强（0-5s），支持一件代发。多种颜色和规格可选，一年内10万+条成交。",
+      "price": 1.95,
+      "currency": "CNY",
       "images": [
-        "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=400&h=400&fit=crop"
+        "/src/images/product-3/1.jpg",
+        "/src/images/product-3/2.jpg",
+        "/src/images/product-3/3.jpg"
       ],
-      "category": "electronics",
+      "category": "home",
       "supplierId": "supplier-1",
       "specifications": [
         {
-          "key": "功率",
-          "value": "20W"
+          "key": "品牌",
+          "value": "如韵"
         },
         {
-          "key": "电池续航",
-          "value": "12小时"
+          "key": "材质",
+          "value": "纯棉"
+        },
+        {
+          "key": "纱线规格",
+          "value": "32股"
+        },
+        {
+          "key": "克重",
+          "value": "40-80g"
+        },
+        {
+          "key": "制作工艺",
+          "value": "提花"
+        },
+        {
+          "key": "吸水性",
+          "value": "0-5s"
+        },
+        {
+          "key": "规格",
+          "value": "25*25cm,30*30cm,34*34cm,40*40cm等多种规格"
+        },
+        {
+          "key": "颜色",
+          "value": "纯白,米白,深灰,浅灰,浅咖,深咖,宝蓝,深蓝,亮黄,浅粉,黑色,墨绿,深紫,果绿,暗红,橘色,亮红"
         }
-      ],
-      "tags": [
-        "音箱",
-        "蓝牙",
-        "智能"
       ],
       "inStock": true,
       "minOrderQuantity": 100,
@@ -200,9 +257,9 @@
       "price": 12.80,
       "currency": "USD",
       "images": [
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1595515106969-1ce29566ff3c?w=400&h=400&fit=crop"
+        "/src/images/product-4/1.jpg",
+        "/src/images/product-4/2.jpg",
+        "/src/images/product-4/3.jpg"
       ],
       "category": "home",
       "supplierId": "supplier-3",
@@ -216,11 +273,6 @@
           "value": "30×20×15cm"
         }
       ],
-      "tags": [
-        "收纳",
-        "整理",
-        "家居"
-      ],
       "inStock": true,
       "minOrderQuantity": 100,
       "createdAt": "2024-01-12T16:45:00Z"
@@ -232,9 +284,9 @@
       "price": 28.90,
       "currency": "USD",
       "images": [
-        "https://images.unsplash.com/photo-1609592806444-c3e8d8b0e281?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=400&fit=crop"
+        "/src/images/product-5/1.jpg",
+        "/src/images/product-5/2.jpg",
+        "/src/images/product-5/3.jpg"
       ],
       "category": "electronics",
       "supplierId": "supplier-1",
@@ -248,11 +300,6 @@
           "value": "iPhone/Android"
         }
       ],
-      "tags": [
-        "无线充电",
-        "快充",
-        "智能"
-      ],
       "inStock": true,
       "minOrderQuantity": 100,
       "createdAt": "2024-01-11T09:15:00Z"
@@ -264,9 +311,9 @@
       "price": 35.60,
       "currency": "USD",
       "images": [
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=400&fit=crop"
+        "/src/images/product-6/1.jpg",
+        "/src/images/product-6/2.jpg",
+        "/src/images/product-6/3.jpg"
       ],
       "category": "toys",
       "supplierId": "supplier-3",
@@ -280,11 +327,6 @@
           "value": "3-8岁"
         }
       ],
-      "tags": [
-        "玩具",
-        "积木",
-        "益智"
-      ],
       "inStock": true,
       "minOrderQuantity": 100,
       "createdAt": "2024-01-10T14:30:00Z"
@@ -296,9 +338,9 @@
       "price": 22.30,
       "currency": "USD",
       "images": [
-        "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400&h=400&fit=crop"
+        "/src/images/product-7/1.jpg",
+        "/src/images/product-7/2.jpg",
+        "/src/images/product-7/3.jpg"
       ],
       "category": "sports",
       "supplierId": "supplier-2",
@@ -312,11 +354,6 @@
           "value": "750ml"
         }
       ],
-      "tags": [
-        "运动",
-        "水杯",
-        "保温"
-      ],
       "inStock": true,
       "minOrderQuantity": 100,
       "createdAt": "2024-01-09T11:20:00Z"
@@ -328,9 +365,9 @@
       "price": 18.80,
       "currency": "USD",
       "images": [
-        "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1570554886111-e80fcac6c97c?w=400&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&h=400&fit=crop"
+        "/src/images/product-8/1.jpg",
+        "/src/images/product-8/2.jpg",
+        "/src/images/product-8/3.jpg"
       ],
       "category": "beauty",
       "supplierId": "supplier-2",
@@ -343,11 +380,6 @@
           "key": "功效",
           "value": "补水保湿"
         }
-      ],
-      "tags": [
-        "面膜",
-        "护肤",
-        "补水"
       ],
       "inStock": true,
       "minOrderQuantity": 100,

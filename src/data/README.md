@@ -2,8 +2,9 @@
 
 ## 文件结构
 
-- `products.json` - 商品数据主文件，包含所有商品、供应商、分类和图片信息
+- `products.json` - 商品数据主文件，包含所有商品、供应商、分类和图片路径信息
 - `mockData.ts` - 数据加载器，从JSON文件读取数据并转换为应用所需格式
+- `../images/` - 商品图片目录，按产品ID组织
 
 ## 商品数据格式
 
@@ -57,7 +58,6 @@
       "value": "硅胶"
     }
   ],
-  "tags": ["手机配件", "iPhone", "保护壳"],
   "inStock": true,
   "minOrderQuantity": 100,
   "createdAt": "2024-01-15T08:00:00Z"
@@ -92,23 +92,36 @@
 
 ### 图片管理
 
-图片信息现在直接存储在商品对象的 `images` 数组中：
+图片现在按产品ID组织存储：
 
+```
+src/images/
+├── product-1/
+│   ├── 1.jpg    # 主图
+│   ├── 2.jpg    # 细节图
+│   └── 3.jpg    # 包装图
+└── product-2/
+    ├── 1.jpg
+    └── ...
+```
+
+商品对象中的图片路径：
 ```json
 {
   "images": [
-    "https://images.unsplash.com/photo-1601972599720-ad7c65b05ea1?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=400&h=400&fit=crop"
+    "/src/images/product-1/1.jpg",
+    "/src/images/product-1/2.jpg",
+    "/src/images/product-1/3.jpg"
   ]
 }
 ```
 
 图片管理规则：
-- 使用 Unsplash 或其他图片服务的URL
+- 每个商品有独立的图片目录
+- 图片按编号命名：1.jpg, 2.jpg, 3.jpg
 - 建议图片尺寸为 400x400px (正方形)
-- 每个商品可以有多张图片 (建议2-4张)
-- 图片URL使用 `?w=400&h=400&fit=crop` 参数确保尺寸一致
-- 直接在商品对象中维护，更加直观
+- 每个商品建议2-4张图片
+- 本地存储，便于版本控制和管理
 
 ### 数据简化
 
@@ -164,7 +177,6 @@
       "value": "塑料"
     }
   ],
-  "tags": ["标签1", "标签2"],
   "inStock": true,
   "minOrderQuantity": 100,
   "createdAt": "2024-01-20T10:00:00Z"

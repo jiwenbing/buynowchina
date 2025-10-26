@@ -1,0 +1,112 @@
+# 1688商品批量添加工具
+
+## 文件说明
+
+- `add-1688-product.js` - 商品添加辅助脚本
+- `product-template.json` - 商品信息模板
+- `README.md` - 使用说明
+
+## 快速添加商品流程
+
+### 1. 准备工作
+```bash
+# 进入项目目录
+cd /Users/shuidi/code/buyNowChina
+
+# 运行辅助脚本查看待处理商品
+node scripts/add-1688-product.js product-4 "链接"
+```
+
+### 2. 手动添加商品步骤
+
+#### 步骤1：创建图片目录
+```bash
+mkdir -p src/images/product-4
+```
+
+#### 步骤2：获取商品信息
+1. 访问1688商品页面
+2. 记录以下信息：
+   - 商品标题
+   - 商品价格（起价）
+   - 商品描述/卖点
+   - 规格参数
+   - 供应商信息
+
+#### 步骤3：保存商品图片
+1. 右键保存商品主图为 `1.jpg`
+2. 保存商品细节图为 `2.jpg`
+3. 保存商品包装图为 `3.jpg`
+4. 将图片放入 `src/images/product-X/` 目录
+
+#### 步骤4：更新商品信息
+在 `src/data/products.json` 中找到对应的产品，替换信息：
+
+```json
+{
+  "id": "product-4",
+  "name": "从1688复制的商品标题",
+  "description": "从1688整理的商品描述，包含卖点",
+  "price": 从1688获取的价格,
+  "currency": "CNY",
+  "images": [
+    "/src/images/product-4/1.jpg",
+    "/src/images/product-4/2.jpg", 
+    "/src/images/product-4/3.jpg"
+  ],
+  "category": "选择合适的分类",
+  "supplierId": "选择合适的供应商",
+  "specifications": [
+    {
+      "key": "从1688复制的规格名",
+      "value": "从1688复制的规格值"
+    }
+  ]
+}
+```
+
+## 待处理商品列表
+
+### 已完成 ✅
+1. **product-1**: 高级软毛牙刷 - ¥5.01
+2. **product-2**: EVA拖鞋 - ¥3.99  
+3. **product-3**: 厨房毛巾 - ¥1.95
+
+### 待处理 ⏳
+4. **product-4**: https://detail.1688.com/offer/927875250705.html
+5. **product-5**: https://detail.1688.com/offer/726918675419.html
+6. **product-6**: https://detail.1688.com/offer/679563918229.html
+7. **product-7**: https://detail.1688.com/offer/647748595882.html
+8. **product-8**: https://detail.1688.com/offer/663281028753.html
+
+## 供应商分配建议
+
+- **supplier-1 (深圳优质电子有限公司)**: 电子产品类
+- **supplier-2 (广州服装制造厂)**: 服装、家居用品类
+- **supplier-3 (义乌小商品批发)**: 日用品、小商品类
+
+## 分类分配建议
+
+- **electronics**: 电子产品、数码配件
+- **fashion**: 服装、鞋类、配饰
+- **home**: 家居用品、厨房用品、收纳
+- **beauty**: 美妆、护肤、个护用品
+- **sports**: 运动用品、户外装备
+- **toys**: 玩具、母婴用品
+
+## 注意事项
+
+1. **价格统一使用人民币（CNY）**
+2. **最小起订量统一为100**
+3. **图片建议400x400px正方形**
+4. **商品描述包含销量等卖点信息**
+5. **规格参数尽量详细完整**
+6. **确保图片版权合规**
+
+## 批量处理建议
+
+由于手动处理每个商品需要5-10分钟，建议：
+1. 优先处理最重要的商品类别
+2. 可以先用占位符图片，后续再替换
+3. 分批次处理，避免一次性工作量过大
+4. 保留1688链接，方便后续更新信息

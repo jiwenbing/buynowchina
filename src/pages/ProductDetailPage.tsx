@@ -44,7 +44,7 @@ const ProductDetailPage: React.FC = () => {
           </button>
         </div>
         
-        <style jsx>{`
+        <style>{`
           .error-page {
             display: flex;
             align-items: center;

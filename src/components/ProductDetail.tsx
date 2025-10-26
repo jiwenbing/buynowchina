@@ -93,14 +93,6 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack }) => {
           </div>
 
           <SupplierInfo supplier={product.supplier} />
-
-          <div className="product-tags">
-            {product.tags.map((tag, index) => (
-              <span key={index} className="tag">
-                {tag}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
 
@@ -112,13 +104,6 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack }) => {
               onClick={handleTrialRequest}
             >
               🧪 {t('product.tryProduct')}
-            </button>
-            
-            <button 
-              className="btn btn-secondary"
-              onClick={handleContactSupplier}
-            >
-              💬 {t('product.contactSupplier')}
             </button>
             
             <button 
@@ -136,14 +121,14 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack }) => {
           product={product}
           type={purchaseType}
           onClose={() => setShowPurchaseModal(false)}
-          onSubmit={(data) => {
+          onSubmit={(data: any) => {
             setShowPurchaseModal(false);
             WebApp.showAlert(t('messages.intentSubmitted'));
           }}
         />
       )}
       
-      <style jsx>{`
+      <style>{`
         .product-detail {
           min-height: 100vh;
           background: var(--tg-theme-bg-color, #ffffff);
@@ -153,7 +138,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack }) => {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 16px;
+          padding: 60px 16px 16px 16px; /* 顶部增加空间给Telegram系统按钮 */
           background: var(--tg-theme-secondary-bg-color, #f8f9fa);
           border-bottom: 1px solid #e0e0e0;
           position: sticky;
@@ -186,7 +171,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack }) => {
         }
         
         .product-title {
-          font-size: 24px;
+          font-size: 28px;
           font-weight: bold;
           margin: 0 0 16px 0;
           line-height: 1.3;
@@ -200,13 +185,13 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack }) => {
         }
         
         .price {
-          font-size: 32px;
+          font-size: 36px;
           font-weight: bold;
           color: var(--tg-theme-button-color, var(--primary-color));
         }
         
         .currency {
-          font-size: 18px;
+          font-size: 20px;
           color: var(--tg-theme-hint-color, #666);
         }
         
@@ -216,13 +201,13 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack }) => {
         }
         
         .product-description h3 {
-          font-size: 18px;
+          font-size: 20px;
           margin: 0 0 12px 0;
           color: var(--tg-theme-text-color, #000);
         }
         
         .product-description p {
-          font-size: 16px;
+          font-size: 18px;
           line-height: 1.6;
           color: var(--tg-theme-text-color, #333);
           margin: 0;
@@ -234,7 +219,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack }) => {
         }
         
         .product-specifications h3 {
-          font-size: 18px;
+          font-size: 20px;
           margin: 0 0 16px 0;
           color: var(--tg-theme-text-color, #000);
         }
@@ -264,22 +249,6 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack }) => {
           text-align: right;
         }
         
-        .product-tags {
-          padding: 24px 0;
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-        }
-        
-        .tag {
-          background: var(--tg-theme-button-color, var(--primary-color));
-          color: white;
-          padding: 6px 12px;
-          border-radius: 16px;
-          font-size: 12px;
-          font-weight: 500;
-        }
-        
         .action-bar {
           position: fixed;
           bottom: 0;
@@ -293,36 +262,48 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack }) => {
         
         .action-buttons {
           display: grid;
-          grid-template-columns: 1fr 1fr 2fr;
-          gap: 8px;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
         }
         
         @media (max-width: 768px) {
           .product-title {
-            font-size: 20px;
+            font-size: 24px;
+          }
+          
+          .price {
+            font-size: 32px;
+          }
+          
+          .action-buttons {
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .detail-header {
+            padding: 50px 16px 12px 16px; /* 移动端也为Telegram系统按钮让出空间 */
+          }
+          
+          .product-title {
+            font-size: 22px;
           }
           
           .price {
             font-size: 28px;
           }
           
-          .action-buttons {
-            grid-template-columns: 1fr;
-            gap: 12px;
-          }
-        }
-        
-        @media (max-width: 480px) {
-          .detail-header {
-            padding: 12px 16px;
-          }
-          
-          .product-title {
+          .product-description h3 {
             font-size: 18px;
           }
           
-          .price {
-            font-size: 24px;
+          .product-description p {
+            font-size: 16px;
+          }
+          
+          .product-specifications h3 {
+            font-size: 18px;
           }
           
           .spec-item {
