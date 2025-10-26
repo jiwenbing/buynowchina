@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: 'https://www.xfx365.com/buynowchina/dist/', // 使用相对路径
+  // 开发环境使用根路径，生产环境使用完整URL
+  base: command === 'serve' ? '/' : 'https://www.xfx365.com/buynowchina/dist/',
   server: {
     allowedHosts: [
       'www.letsfund.us',
@@ -17,4 +18,4 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets'
   }
-})
+}))

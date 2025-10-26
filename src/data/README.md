@@ -15,7 +15,7 @@
   "id": "supplier-1",
   "name": "张伟",
   "company": "深圳优质电子有限公司",
-  "telegramUsername": "zhangwei_electronics",
+  "telegramUsername": "BuyNowChina_service",
   "location": "深圳市",
   "rating": 4.8,
   "verified": true,

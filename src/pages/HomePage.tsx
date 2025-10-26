@@ -24,22 +24,22 @@ const HomePage: React.FC = () => {
 
   const handleContactPlatform = () => {
     const message = encodeURIComponent(t('functions.contactPlatform'));
-    WebApp.openTelegramLink(`https://t.me/buynowchina_support?text=${message}`);
+    WebApp.openTelegramLink(`https://t.me/buynowchina_service?text=${message}`);
   };
 
   const handleMerchantCooperation = () => {
     const message = encodeURIComponent(t('functions.merchantCooperation'));
-    WebApp.openTelegramLink(`https://t.me/buynowchina_business?text=${message}`);
+    WebApp.openTelegramLink(`https://t.me/buynowchina_service?text=${message}`);
   };
 
   const handleRequestSample = () => {
     const message = encodeURIComponent(t('functions.requestSample'));
-    WebApp.openTelegramLink(`https://t.me/buynowchina_samples?text=${message}`);
+    WebApp.openTelegramLink(`https://t.me/buynowchina_service?text=${message}`);
   };
 
   const handleContactUs = () => {
     const message = encodeURIComponent(t('contactUs.message'));
-    WebApp.openTelegramLink(`https://t.me/buynowchina_support?text=${message}`);
+    WebApp.openTelegramLink(`https://t.me/buynowchina_service?text=${message}`);
   };
 
   return (
